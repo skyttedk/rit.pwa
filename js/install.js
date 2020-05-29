@@ -7,9 +7,11 @@ let deferredPrompt = null;
 window.addEventListener('beforeinstallprompt', (e) => {
   e.preventDefault();
   deferredPrompt = e;
+  debugger;
   //installButton.removeAttribute('hidden');
   //installPWA();
-  document.getElementById("pwa_redirect").style.display = 'block';
+
+  //document.getElementById("pwa_redirect").style.display = 'block';
 
   //const installButton = document.getElementById('butInstall');
   //installButton.addEventListener('click', installPWA);
@@ -21,6 +23,7 @@ var pwa4wp_open_install = function(){
   console.log("install button show");
 };
 
+/*
 document.getElementById("pwainstall_button").addEventListener("click",function(){
 if(window.pwa4wp_installevent !== undefined ){
   window.pwa4wp_installevent.prompt();
@@ -41,3 +44,4 @@ window.addEventListener('appinstalled', (evt) => {
   // Log install to analytics
   console.log('INSTALL: Success');
 });
+*/
