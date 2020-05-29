@@ -16,6 +16,8 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="manifest" href="/manifest.json">
   
+  <script src="js/camera.js"></script>
+
 </head>
 <body class="fullscreen">
   <div class="container">
