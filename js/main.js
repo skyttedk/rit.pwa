@@ -7,8 +7,8 @@ window.onload = () => {
   }
 
 
-  cameraDeviceIds = []
-  currentCameraIndex = 0
+  let cameraDeviceIds = []
+  let currentCameraIndex = 0
 
   // find the video devices (font/back cameras etc)
   navigator.mediaDevices.enumerateDevices().then(function (devices) {
