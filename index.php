@@ -22,7 +22,7 @@
     <h1 class="title">Hello World!</h1>
   </div>
 
-  <video id="cameraPlayer"></video> 
+
 
   <script src="js/main.js"></script>
 </body>
