@@ -1,21 +1,26 @@
 'use strict';
 
 let deferredInstallPrompt = null;
-const installButton = document.getElementById('butInstall');
-installButton.addEventListener('click', installPWA);
 
 
-window.addEventListener('beforeinstallprompt', saveBeforeInstallPromptEvent);
 
-function saveBeforeInstallPromptEvent(evt) {
-  deferredInstallPrompt = evt;
-  installButton.removeAttribute('hidden');
-}
+window.addEventListener('beforeinstallprompt', () => {
+  e.preventDefault();
+  deferredInstallPrompt = e;
+  //installButton.removeAttribute('hidden');
+  //installPWA();
+
+  const installButton = document.getElementById('butInstall');
+  installButton.addEventListener('click', installPWA);
+
+
+});
 
 
 function installPWA(evt) {
   
   deferredInstallPrompt.prompt();
+  
   // Hide the install button, it can't be called twice.
   evt.srcElement.setAttribute('hidden', true);
 
@@ -31,8 +36,7 @@ function installPWA(evt) {
 }
 
 
-window.addEventListener('appinstalled', logAppInstalled);
-
-function logAppInstalled(evt) {
-  console.log('rit.pwa app blev installeret installet.', evt);
-}
+window.addEventListener('appinstalled', (evt) => {
+  // Log install to analytics
+  console.log('INSTALL: Success');
+});
