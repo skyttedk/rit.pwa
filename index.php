@@ -22,7 +22,7 @@
     <h1 class="title">Hello World!</h1>
   </div>
 
-
+  <button onclick="takePicture()">Take Pick</button>
 
   <script src="js/main.js"></script>
 </body>
