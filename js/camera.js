@@ -27,9 +27,3 @@ window.takePicture = function() {
   })
 
 }
-
-
-
-
-
-}
