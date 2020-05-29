@@ -20,5 +20,6 @@
     <h1 class="title">Hello World!</h1>
   </div>
   <script src="js/main.js"></script>
+  <script src="js/install.js"></script>
 </body>
 </html>
