@@ -11,7 +11,7 @@ window.addEventListener('beforeinstallprompt', (e) => {
   //installButton.removeAttribute('hidden');
   //installPWA();
 
-  //document.getElementById("pwa_redirect").style.display = 'block';
+  document.getElementById("pwa_redirect").style.display = 'block';
 
   //const installButton = document.getElementById('butInstall');
   //installButton.addEventListener('click', installPWA);
