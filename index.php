@@ -22,5 +22,6 @@
   </div>
   <script src="js/main.js"></script>
   <script src="js/install.js"></script>
+  <div id="pwa_redirect" style="display: none;"><a href="/installer.html"><button>Install this page as an app</button></a></div>
 </body>
 </html>
