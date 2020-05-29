@@ -14,13 +14,13 @@
   <title>Hello World</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="manifest" href="/manifest.json">
-  <script src="js/install.js"></script>
+  
 </head>
 <body class="fullscreen">
   <div class="container">
     <h1 class="title">Hello World!</h1>
   </div>
   <script src="js/main.js"></script>
-  
+  <script src="js/install.js"></script>
 </body>
 </html>
