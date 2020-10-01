@@ -26,8 +26,8 @@ async function onLoad() {
     let value = JSON.parse(response.value)
     let body = value.response
 
-    $("container").empty();
-    $("container").html(atob(body)).trigger('create');
+    $("#container").empty();
+    $("#container").html(atob(body)).trigger('create');
 
   } catch (ex) {
     console.error(ex.message)
