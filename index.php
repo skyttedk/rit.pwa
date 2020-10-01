@@ -17,14 +17,17 @@
   <link rel="manifest" href="/manifest.json">
   
   <script src="js/camera.js"></script>
+  <script src="js/server.js"></script>
 
 </head>
-<body class="fullscreen">
+<body onload="onLoad()" class="fullscreen">
   <div class="container">
-    <h1 class="title">Hello World!</h1>
+    
   </div>
 
-  <button onclick="takePicture()">Take Pick</button>
+  <!-- 
+    <button onclick="takePicture()">Take Pick</button>
+  -->
 
   <script src="js/main.js"></script>
 </body>

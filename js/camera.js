@@ -1,7 +1,4 @@
-
-
 window.takePicture = function() {
-
 
   let cameraDeviceIds = []
   let currentCameraIndex = 0
@@ -15,15 +12,12 @@ window.takePicture = function() {
           }
       })
   })
-  
   // attach camera output to video tag
   navigator.mediaDevices.getUserMedia({
       video: { deviceId: { exact: cameraDeviceIds[currentCameraIndex] } }
   }).then(function (stream) {
-
       var cameraPlayer = document.createElement("video");
       cameraPlayer.srcObject = stream
       document.body.appendChild(cameraPlayer);
   })
-
 }
