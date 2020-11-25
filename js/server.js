@@ -7,7 +7,7 @@ async function postData(url = '', data = {}) {
     cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
     headers: {
       'Content-Type': 'application/json',
-      'Authorization': 'Basic ' + btoa('kss:gdMGXxAwH4khmLfYW07PqZrRa5C10tlLqe3dNgRF90g=')
+      'Authorization': 'Basic ' + btoa('kss:3XZQPrthm39hfZ25Mf1MrOMqQIl7IKQXuAAl7WbUvAg=') //webservice key from nav
     },
     redirect: 'follow', // manual, *follow, error
     referrerPolicy: 'no-referrer', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
